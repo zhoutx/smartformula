@@ -5,8 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.epri.dlsc.sbs</groupId>
-    <artifactId>calservice</artifactId>
-    <version>1.0</version>
-
+    <artifactId>smartformula</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
 </project>

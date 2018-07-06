@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/calcore/pom.xml" />
         <option value="$PROJECT_DIR$/dataset/pom.xml" />
+        <option value="$PROJECT_DIR$/datasource/pom.xml" />
       </list>
     </option>
   </component>
