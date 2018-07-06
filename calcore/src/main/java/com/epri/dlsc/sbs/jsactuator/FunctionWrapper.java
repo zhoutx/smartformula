@@ -184,8 +184,8 @@ public class FunctionWrapper {
                 // 数据集
                 if (argExps.dataType == Function.FunctionArg.DATASET) {
                     DataSetExpression datasetExps = (DataSetExpression) argExps.value;
-                    String datasetId = datasetExps.getDatasetId();
-                    String filedId = datasetExps.getFiledId();
+                    String datasetId = datasetExps.getDataSetId();
+                    String filedId = datasetExps.getValueFieldId();
                     BaseDataSource calDatasource = (BaseDataSource) calculateDriver.getDataSetDefine().getDataSource(datasetId);
                     Map<String, String> filers = calDatasource.getUniqueConstraintFilters(calRow, datasetExps);
                     List<ResultSet.Row> datas = calDatasource.getDatas(filers);

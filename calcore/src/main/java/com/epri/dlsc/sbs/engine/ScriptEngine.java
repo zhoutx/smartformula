@@ -16,9 +16,6 @@ import com.epri.dlsc.sbs.jsactuator.JsDATE;
 
 /**
  * 脚本引擎
- * 
- * @author Zhong.Weijian
- *
  */
 final public class ScriptEngine {
 	private static Compilable compilable;

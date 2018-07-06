@@ -220,9 +220,9 @@ public class Formula implements Serializable {
             if (datasetExpsList != null && datasetExpsList.size() > 0) {
                 for (int i = 0; i < datasetExpsList.size(); i++, datasetVarCounter++) {
                     DataSetExpression datasetExps = datasetExpsList.get(i);
-                    String dataSetID = datasetExps.getDatasetId();
+                    String dataSetID = datasetExps.getDataSetId();
                     String var = CommonUtil.toDatasetVar(datasetVarCounter);
-                    String exps = datasetExps.getExps();
+                    String exps = datasetExps.getExpressionText();
                     formulaScript = formulaScript.replace(exps, "$datasetWrapper.eval(" + var + ",$calRow,$formulaItemContext)");
                     runtimeContext.put(var, datasetExps);
                     getFormula().formulaDefine.addUsedDataSetID(dataSetID);

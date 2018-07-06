@@ -11,7 +11,7 @@ public class FormulaItemContext {
 	
 	void set(String key, Map<String, String> value){
 		if(context == null){
-			context = new HashMap<String, Map<String, String>>();
+			context = new HashMap<>();
 		}
 		context.put(key, value);
 	}

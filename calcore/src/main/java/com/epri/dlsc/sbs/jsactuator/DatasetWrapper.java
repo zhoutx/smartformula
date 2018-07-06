@@ -44,7 +44,7 @@ public class DatasetWrapper {
 		if(data != null){
 			//将获取的数据源数据加入下上文中
 			Collection<DataSetField> fields = cds.getDataSetFields();
-			Map<String, String> properties = new HashMap<String, String>();
+			Map<String, String> properties = new HashMap<>();
 			for(DataSetField field : fields){
 				String fieldID = field.getID();
 				String fieldValue = data.getFieldValue(fieldID);
