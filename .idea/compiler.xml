@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="calcore" />
+        <module name="calservice" />
+        <module name="dataset" />
+        <module name="datasource" />
+        <module name="smartformula" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="calcore" target="1.8" />
+      <module name="calservice" target="1.5" />
+      <module name="dataset" target="1.5" />
+      <module name="datasource" target="1.5" />
+      <module name="smartformula" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
