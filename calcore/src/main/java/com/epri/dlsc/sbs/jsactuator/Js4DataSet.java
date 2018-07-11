@@ -5,16 +5,17 @@ import com.epri.dlsc.sbs.dataset.ResultSet2;
 
 public class Js4DataSet {
 
-    public DataSetObject toObject(DataSetExpression dataSetExpression, ResultSet2.Row row){
-        return null;
+    public DataSetJSObject toObject(DataSetExpression dataSetExpression, ResultSet2.Row row){
+        DataSetJSObject[] objs = toArrayObject(dataSetExpression, row);
+        return objs == null ? null : objs[0];
     }
 
-    public DataSetObject[] toArrayObject(DataSetExpression dataSetExpression, ResultSet2.Row row){
+    public DataSetJSObject[] toArrayObject(DataSetExpression dataSetExpression, ResultSet2.Row row){
         return null;
     }
 
     public boolean isExist(DataSetExpression dataSetExpression, ResultSet2.Row row){
-        DataSetObject[] objArr = toArrayObject(dataSetExpression, row);
+        DataSetJSObject[] objArr = toArrayObject(dataSetExpression, row);
         if(objArr == null || objArr.length == 0){
             return false;
         }

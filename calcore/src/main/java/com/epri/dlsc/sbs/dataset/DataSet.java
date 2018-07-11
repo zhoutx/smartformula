@@ -44,4 +44,8 @@ public class DataSet implements Serializable{
 			}
 		}
 	}
+
+	public static class DataRecord{
+
+	}
 }
