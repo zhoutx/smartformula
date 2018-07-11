@@ -1,4 +1,5 @@
-
+.project
+.classpath
 .idea/vcs.xml
 smartformula.iml
 calcore/calcore.iml
